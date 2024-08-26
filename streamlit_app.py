@@ -4,7 +4,7 @@ import numpy as np
 
 # Load the model
 try:
-    with open('logistic.pkl', 'rb') as file:
+    with open('tree_clf.pkl', 'rb') as file:
         model = pickle.load(file)
 except Exception as e:
     st.error(f"Error loading model: {e}")
