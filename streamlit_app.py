@@ -25,12 +25,12 @@ feature_6 = st.sidebar.number_input("Age")
 input_data = np.array([[feature_1, feature_2, feature_3,feature_4,feature_5,feature_6]])
 
 # Check if the input data has the correct number of features
-if input_data.shape[1] != n_features:
-    st.error(f"The model expects {n_features} features, but received {input_data.shape[1]} features.")
-else:
+# if input_data.shape[1] != n_features:
+#     st.error(f"The model expects {n_features} features, but received {input_data.shape[1]} features.")
+# else:
     # Make prediction
-    prediction = model.predict(input_data)
+prediction = model.predict(input_data)
 
     # Display the prediction
-    st.write("### Predicted Output")
-    st.write(prediction[0])
+st.write("### Predicted Output")
+st.write(prediction[0])
