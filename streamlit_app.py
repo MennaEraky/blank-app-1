@@ -29,10 +29,9 @@ input_data = np.array([[feature_1, feature_2, feature_3, feature_4, feature_5, f
 if np.any(np.isnan(input_data)):
     st.error("Input data contains missing values. Please provide valid input.")
 else:
-    try:
-        # Make prediction
-        prediction = model.predict(input_data)
-        st.write("### Predicted Output")
-        st.write(prediction[0])
-    except Exception as e:
-        st.error(f"Error making prediction: {e}")
+
+    # Make prediction
+    prediction = model.predict(input_data)
+    st.write("### Predicted Output")
+    st.write(prediction[0])
+
