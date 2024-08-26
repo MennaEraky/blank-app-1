@@ -14,9 +14,9 @@ except Exception as e:
 st.title("Decision Tree Prediction")
 
 # Input features
-st.sidebar.header("Input Features",value=10.0)
+st.sidebar.header("Input Features")
 feature_1 = st.sidebar.number_input("Pregnancies",value=10.0)
-feature_2 = st.sidebar.number_input("Glucose")
+feature_2 = st.sidebar.number_input("Glucose",value=10.0)
 feature_3 = st.sidebar.number_input("Insulin")
 feature_4 = st.sidebar.number_input("BMI")
 feature_5 = st.sidebar.number_input("DiabetesPedigreeFunction")
