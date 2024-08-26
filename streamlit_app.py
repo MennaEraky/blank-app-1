@@ -27,17 +27,17 @@ feature_6 = st.sidebar.number_input("Age")
 # Test input
 input_data = np.array([[10.0, 10.0, 50.0, 30.0, 0.5, 25.0]])  # Adjust values accordingly
 
-# Make prediction
-prediction = model.predict(input_data)
-print("Predicted Output:", prediction[0])
+# # Make prediction
+# prediction = model.predict(input_data)
+# print("Predicted Output:", prediction[0])
 
-# Check if the input data has missing values
-# if np.any(np.isnan(input_data)):
-#     st.error("Input data contains missing values. Please provide valid input.")
-# else:
+#Check if the input data has missing values
+if np.any(np.isnan(input_data)):
+    st.error("Input data contains missing values. Please provide valid input.")
+else:
 
-#     # Make prediction
-#     prediction = model.predict(input_data)
-#     st.write("### Predicted Output")
-#     st.write(prediction[0])
+    # Make prediction
+    prediction = model.predict(input_data)
+    st.write("### Predicted Output")
+    st.write(prediction[0])
 
