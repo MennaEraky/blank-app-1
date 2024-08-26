@@ -23,9 +23,9 @@ feature_5 = st.sidebar.number_input("DiabetesPedigreeFunction")
 feature_6 = st.sidebar.number_input("Age")
 
 # Prepare the input data
-#input_data = np.array([[feature_1, feature_2,feature_3,feature_4,feature_5,feature_6]])
+input_data = np.array([[feature_1, feature_2,feature_3,feature_4,feature_5,feature_6]])
 # Test input
-input_data = np.array([[10.0, 10.0, 50.0, 30.0, 0.5, 25.0]])  # Adjust values accordingly
+#input_data = np.array([[10.0, 10.0, 50.0, 30.0, 0.5, 25.0]])  # Adjust values accordingly
 
 # # Make prediction
 # prediction = model.predict(input_data)
