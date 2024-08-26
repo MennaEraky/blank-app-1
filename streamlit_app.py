@@ -13,12 +13,12 @@ st.title("Decision Tree Prediction")
 
 # Input features
 st.sidebar.header("Input Features")
-feature_1 = st.sidebar.number_input("Pregnancies", value=1.0)
-feature_2 = st.sidebar.number_input("Glucose", value=2.0)
-feature_3 = st.sidebar.number_input("Insulin", value=3.0)
-feature_4 = st.sidebar.number_input("BMI", value=3.0)
-feature_5 = st.sidebar.number_input("DiabetesPedigreeFunction", value=3.0)
-feature_6 = st.sidebar.number_input("Age", value=0)
+feature_1 = st.sidebar.number_input("Pregnancies")
+feature_2 = st.sidebar.number_input("Glucose")
+feature_3 = st.sidebar.number_input("Insulin")
+feature_4 = st.sidebar.number_input("BMI")
+feature_5 = st.sidebar.number_input("DiabetesPedigreeFunction")
+feature_6 = st.sidebar.number_input("Age")
 
 
 # Prepare the input data
