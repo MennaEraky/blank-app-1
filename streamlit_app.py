@@ -4,7 +4,7 @@ import numpy as np
 
 # Load the model
 try:
-    with open('model5.pkl', 'rb') as file:
+    with open('model6.pkl', 'rb') as file:
         model = pickle.load(file)
 except Exception as e:
     st.error(f"Error loading model: {e}")
@@ -23,7 +23,7 @@ feature_5 = st.sidebar.number_input("DiabetesPedigreeFunction")
 feature_6 = st.sidebar.number_input("Age")
 
 # Prepare the input data
-input_data = np.array([[feature_1, feature_2]])
+input_data = np.array([[feature_1, feature_2,feature_3,feature_4,feature_5,feature_6]])
 
 # Check if the input data has missing values
 if np.any(np.isnan(input_data)):
