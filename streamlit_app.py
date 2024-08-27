@@ -16,15 +16,15 @@ st.title("Linear Regression Prediction")
 
 # Input features
 st.sidebar.header("Input Features")
-feature_1 = st.sidebar.number_input("Feature 1", value=1.0)
-feature_2 = st.sidebar.number_input("Feature 2", value=2.0)
-feature_3 = st.sidebar.number_input("Feature 3", value=3.0)
-feature_4 = st.sidebar.number_input("Feature 4", value=3.0)
-feature_5 = st.sidebar.number_input("Feature 5", value=3.0)
-feature_6 = st.sidebar.number_input("Feature 6", value=3.0)
+Glucose = st.sidebar.number_input("Feature 1", value=1.0)
+Glucose = st.sidebar.number_input("Feature 2", value=2.0)
+Insulin = st.sidebar.number_input("Feature 3", value=3.0)
+BMI = st.sidebar.number_input("Feature 4", value=3.0)
+DiabetesPedigreeFunction = st.sidebar.number_input("Feature 5", value=3.0)
+Age = st.sidebar.number_input("Feature 6", value=3.0)
 
 # Prepare the input data
-input_data = np.array([[feature_1, feature_2, feature_3,feature_4,feature_5,feature_6]])
+input_data = np.array([[Glucose, Glucose, Insulin,BMI,DiabetesPedigreeFunction,Age]])
 
 # Check if the input data has the correct number of features
 if input_data.shape[1] != n_features:
