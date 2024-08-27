@@ -16,12 +16,12 @@ st.title("Linear Regression Prediction")
 
 # Input features
 st.sidebar.header("Input Features")
-Pregnancies = st.sidebar.number_input("Pregnancies ", value=1.0)
-Glucose = st.sidebar.number_input("Glucose", value=2.0)
-Insulin = st.sidebar.number_input("Insulin", value=3.0)
-BMI = st.sidebar.number_input("BMI", value=3.0)
-DiabetesPedigreeFunction = st.sidebar.number_input("DiabetesPedigreeFunction", value=3.0)
-Age = st.sidebar.number_input("Age ", value=3.0)
+Pregnancies = st.sidebar.number_input("Pregnancies ", value=10.0)
+Glucose = st.sidebar.number_input("Glucose", value=20.0)
+Insulin = st.sidebar.number_input("Insulin", value=30.0)
+BMI = st.sidebar.number_input("BMI", value=30.0)
+DiabetesPedigreeFunction = st.sidebar.number_input("DiabetesPedigreeFunction", value=30.0)
+Age = st.sidebar.number_input("Age ", value=30.0)
 
 # Prepare the input data
 input_data = np.array([[Pregnancies, Glucose, Insulin,BMI,DiabetesPedigreeFunction,Age]])
