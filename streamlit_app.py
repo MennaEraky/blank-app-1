@@ -45,4 +45,4 @@ else:
     except Exception as e:
         st.error(f"Error making prediction: {e}")
 import sklearn
-print(sklearn.__version__)
+st.write(sklearn.__version__)
