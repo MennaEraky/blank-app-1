@@ -1,6 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
+import sklearn
 
 # Load the model
 model_path = 'tree_clf (4).pkl'
@@ -44,5 +45,4 @@ else:
         st.write(prediction[0])
     except Exception as e:
         st.error(f"Error making prediction: {e}")
-import sklearn
-st.write(sklearn.__version__)
+#st.write(sklearn.__version__)
