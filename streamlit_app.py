@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 # Load the model
-model_path = 'tree_clf (4).pkl'
+model_path = 'logistic.pkl'
 try:
     with open(model_path, 'rb') as file:
         model = pickle.load(file)
