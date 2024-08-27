@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 
 # load pkl file
-with open('tree_clf (1).pkl', 'rb') as file:
+with open('tree_clf (3).pkl', 'rb') as file:
     model = pickle.load(file)
 
 
