@@ -1,7 +1,6 @@
 import streamlit as st
 import pickle
 import numpy as np
-import sklearn
 
 # Load the model
 model_path = 'tree_clf (4).pkl'
@@ -10,6 +9,7 @@ try:
         model = pickle.load(file)
 except Exception as e:
     st.error(f"Error loading model: {e}")
+    st.stop()
 
 # Check the number of features the model expects
 try:
@@ -39,10 +39,12 @@ if n_features is None or input_data.shape[1] != n_features:
 else:
     # Make prediction
     try:
-        prediction = model.predict(input_data)
-        # Display the prediction
-        st.write("### Predicted Output")
-        st.write(prediction[0])
+        # Check if model supports the predict method
+        if hasattr(model, 'predict'):
+            prediction = model.predict(input_data)
+            st.write("### Predicted Output")
+            st.write(prediction[0])
+        else:
+            st.error("The model does not have a 'predict' method.")
     except Exception as e:
         st.error(f"Error making prediction: {e}")
-#st.write(sklearn.__version__)
